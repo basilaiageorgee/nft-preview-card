@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.NFT-img{
+    max-width: 300px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.divoverlay{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0;
+    transition: .5s ease;
+    display: flex;
+    align-items:center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.divoverlay:hover{
+    opacity: 0.5;
+}
+
+.divoverlay:hover ~ .NFT-name{
+    color:hsl(178, 100%, 50%);
+    transition: 0.3s;
+}
+
+.NFT-container{
+    max-width: 300px;
+    background-color: hsl(216, 50%, 16%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.NFT-child-component{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(216, 50%, 16%);
+}
+
+.NFT-name{
+    color: white;
+    padding:30px 0 20px 0;
+    font-size: 26px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.NFT-name:hover{
+    color:hsl(178, 100%, 50%);
+    transition: 0.3s;
+}
+
+.NFT-metadata{
+    color:hsl(215, 51%, 70%);
+    font-size: 18px;
+    font-weight: lighter;
+
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 10px 0;
+    border-bottom: 2px solid hsl(215, 32%, 27%);
+
+}
+
+.user_link{
+    text-decoration: none;
+}
+
+.infoitem1{
+    display: flex;
+    width: 100px;
+    color:hsl(178, 100%, 50%);
+}
+.infoitem2 p, .infoitem1 p{
+    padding-left: 5px;
+}
+
+.infoitem2{
+    display: flex;
+    width: 100px;
+    color: hsl(215, 51%, 70%);
+}
+
+.userinfo{
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+}
+
+.userinfo img{
+    max-width: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+
+}
+
+.userinfo p{
+    color: hsl(215, 51%, 70%);
+    padding-left: 10px;
+}
+
+.username{
+    color: white;
+}
+
+.iconview{
+   margin: 0 auto;
+}
